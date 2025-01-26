@@ -1,0 +1,109 @@
+.recent-location hr {
+    margin: 0;
+}
+
+.left-panel {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  
+    .city-input {
+      width: 100%;
+    }
+  
+    .add-btn {
+      font-size: 1.2rem;
+    }
+  
+    .recent-location {
+      .recent-label {
+        font-size: 0.7rem;
+      }
+    }
+  
+    .city-list {
+      .city-item {
+        .icon-group {
+          .fa-icon {
+            cursor: pointer;
+          }
+        }
+      }
+      img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+  
+  .right-panel {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  
+    .city-details {
+      .header {
+        .city-name {
+          font-weight: bold;
+        }
+      }
+  
+      .weather-info {
+        .weather-icon {
+          width: 150px;
+          height: 150px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          overflow: hidden;
+  
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+  
+        .details {
+          .temperature {
+            font-weight: bold;
+            font-size: 1.5rem;
+          }
+        }
+      }
+  
+      .forecast {
+        .forecast-item {
+          .forecast-icon {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+  
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+  
+          .forecast-date,
+          .forecast-day,
+          .forecast-temp {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  
+  .floating-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
