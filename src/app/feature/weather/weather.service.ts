@@ -18,7 +18,7 @@ export class WeatherService {
 
   getWeatherWithForecast(city: string): Observable<WeatherData> {
     return this.http
-      .get<any>(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}&units=metric`)
+      .get<any>(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}&units=metric`)
       .pipe(
         // Map the current weather data
         map(current => ({
@@ -32,7 +32,7 @@ export class WeatherService {
         })),
         mergeMap(currentWeatherData =>
           this.http
-            .get<any>(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${this.apiKey}&units=metric`)
+            .get<any>(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${this.apiKey}&units=metric`)
             .pipe(
               map(forecastData => {
                 // Create a Map to ensure unique dates
