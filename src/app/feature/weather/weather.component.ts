@@ -30,7 +30,6 @@ export class WeatherComponent implements OnInit {
       // Display only the forecast for the current city
       if (forecastData) {
         this.forecastData = forecastData;
-        console.log("🚀 ~ this.forecastData:", this.forecastData)
       }
     });
   }
